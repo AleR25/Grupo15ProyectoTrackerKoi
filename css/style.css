@@ -1,13 +1,37 @@
 
 /*variables*/
 :root{
-    --color-lila: #cb9cf2;
-    --color-violet: #9e7b9b;
-    --color-gris: #616283;
-    --color-azul: #32435d;
-    --color-negro: #0e1116;
+    /*colores con sus respectivas transparencias*/
+    --lila-solid: #cb9cf2;
+    --lila-900: rgba(203, 156, 242, 0.9);
+    --lila-500: rgba(203, 156, 242, 0.5);
+    --lila-300: rgba(203, 156, 242, 0.3);
 
+    --violet-solid: #9e7b9b;
+    --violet-900: rgba(158, 123, 155, 0.9);
+    --violet-500: rgba(158, 123, 155, 0.5);
+    --violet-300: rgba(158, 123, 155, 0.3);
 
+    --gris-solid: #616283;
+    --gris-900: rgba(97, 98, 131, 0.9);
+    --gris-500: rgba(97, 98, 131, 0.5);
+    --gris-300: rgba(97, 98, 131, 0.3);
+    
+    --azul-solid: #32435d;
+    --azul-900: rgba(50, 67, 93, 0.9);
+    --azul-500: rgba(50, 67, 93, 0.5);
+    --azul-300: rgba(50, 67, 93, 0.3);
+
+    --black-solid: #0e1116;
+    --white-solid: #ffffff;
+
+    /*tipografia*/
+
+    /*tamaño de fuente*/
 }
 
 /*codigo css*/
+
+/*codigo tarjeta del anime*/
+
+/*codigo carrusel*/     
