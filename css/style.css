@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /*variables*/
 :root{
@@ -26,9 +27,24 @@
     --white-solid: #ffffff;
 
     /*tipografia*/
-
+    --font-poppins: 'Poppins', sans-serif;
+    
     /*tamaño de fuente*/
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3.2em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmal: 1.4em;
 }
+
+html{
+    font-family: var(--font-poppins);
+    font-size: 62.5%;
+}
+
+/*estilos banner*/
 
 /*codigo css*/
 
