@@ -39,6 +39,10 @@
     --font-xsmal: 1.4em;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 html{
     font-family: var(--font-poppins);
     font-size: 62.5%;
