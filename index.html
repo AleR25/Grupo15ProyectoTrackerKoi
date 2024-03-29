@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/icons/solo-logo.ico">
     <title>Tracker Koi</title>
@@ -11,31 +12,31 @@
     <!--el boton de inicio de sesión se podria ocultar una vez se inicie secion-->
     <!--falta agregar el desplegable-->
     <header>
-        <nav>
-            <picture class="logo-trackerkoi">
+        <nav class="navbar">
+            <picture class="navbar__logo">
                 <a href="/index.html">
-                    <img src="/img/logo-trackerkoi/white-logo.png" alt="logo de Tracker Koi">
+                    <img class="logo" src="/img/logo-trackerkoi/white-logo.png" alt="logo de Tracker Koi">
                 </a>
             </picture>
 
             <section>
                 <ul>
-                    <li>
-                        <a href="/index.html">HOME</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="/index.html"><i class="fa-solid fa-house" style="color: #cb9cf2;"></i></a>
                     </li>
 
-                    <li>
-                        <a href="">MENÚ</a><!--no se a q viste lleva este-->
+                    <li class="navbar__item">
+                        <a class="navbar__link" href=""><i class="fa-solid fa-bars"></i></a><!--no se a q viste lleva este-->
                     </li>
 
-                    <li>
-                        <a href="">PERFIL</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href=""><i class="fa-solid fa-circle-user"></i></a>
                     </li>
                 </ul>
             </section>
 
             <section>
-                <a href="">BUSQUEDA</a>
+                <a class="navbar__link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
 
                 <button>INICIO DE SESIÓN</button>
             </section>

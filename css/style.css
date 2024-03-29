@@ -68,9 +68,8 @@ header{
     padding: var(--spacing-header);
 }
 
-.logo-trackerkoi{
-    height: 5em;
-    width: 18.1em;
+.logo{
+    height: 4rem;
 }
 
 /*codigo css*/
