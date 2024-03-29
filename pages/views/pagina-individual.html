@@ -4,36 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/all.min.css">
     <link rel="icon" href="/img/icons/solo-logo.ico">
     <title>Jujutsu Kaisen | Tracker Koi</title>
   </head>
   <body>
     <header>
       <!--menu de navegación-->
-      <nav>
+      <nav class="nav-bar">
         <a href="/index.html">
-          <img
+          <img class="logo"
             src="/img/logo-trackerkoi/white-logo.png"
             alt="logo de Tracker Koi">
         </a>
-        <div>
+        <div class="icons-nav">
           <!--agregar iconos-->
           <ul>
             <li>
-              <a href="/index.html"><i>HOME</i></a>
+              <a href="/index.html"><i class="fa-solid fa-house" style="color: #cb9cf2;"></i></a>
             </li>
             <li>
-              <a href="/pages/views/catalogo.html"><i>CATALOGO</i></a>
+              <a href="/pages/views/catalogo.html"><i class="fa-solid fa-bars"></i></a>
             </li>
             <li>
-              <a href=""><i>PERFIL</i></a>
+              <a href=""><i class="fa-solid fa-circle-user"></i></a>
               <!--definir ruta-->
             </li>
           </ul>
         </div>
-        <div>
-          <button><i>BUSQUEDA</i></button>
-          <button>INICIO DE SESIÓN</button>
+        <div class="botones">
+          <a class="search"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+          <button class="login">INICIO DE SESIÓN</button>
         </div>
       </nav>
     </header>
@@ -63,126 +64,91 @@
           a sus compañeros. ¿Qué le deparará el destino?
         </p>
         <div>
-          <button>Agregar a Favoritos</button>
-          <!--agregar icono heart-->
-          <button>Agregar a Lista</button>
-          <!--gregar icono add-->
+          <a class="like"><i class="fa-regular fa-heart"></i></a>
+          <a class="add"><i class="fa-regular fa-plus"></i></a>
         </div>
       </div>
     </section>
-    <!--seccion lista de episodios-->
-    <div>
-      <select>
-        <option>Temporada 1 (24 Episodios)</option>
-        <option>Temporada 2(23 Episodios)</option>
-      </select>
-      <!--agg todos los capitulos de la temp. y actualizar los caption-->
-      <div>
-        <ul>
-          <li>
-            <a href="">
-              <div>
-                <img
-                  src="/img/capitulos/fav-cap1.jpeg"
-                  alt="caption espisodio 01">
-                <i></i>
-                <!--agregar icono de visto-->
-              </div>
-              <p>E01 - T01 | Ryomen Sukuna</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <picture>
-                <img
-                  src="/img/capitulos/fav-cap2.jpeg"
-                  alt="caption espisodio 02">
-              </picture>
-              <p>E02 - T01 | Por mí</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <picture>
-                <img
-                  src="/img/capitulos/fav-cap10.jpeg"
-                  alt="caption espisodio 03">
-              </picture>
-              <p>E03 - T01 | Chica de acero</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <picture>
-                <img
-                  src="/img/capitulos/fav-cap14.jpeg"
-                  alt="caption espisodio 04">
-              </picture>
-              <p>E04 - T01 | La existencia terrenal</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!--seccion carrusel de animes similares-->
-    <section>
-      <div>
-        <h3>Animes similares</h3>
-        <a href="">Ver todos<i></i></a>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <a href="">
-              <picture>
-                <img
-                  src="/img/posters-animes/haikyu.jpg"
-                  alt="poster de Haikyuu!">
-              </picture>
-              <!--preguntar porque este div?-->
-              <div>
-                <h4>Haikyuu!</h4>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <picture>
-                <img
-                  src="/img/posters-animes/jujutsu-kaisen.jpg"
-                  alt="Poster de Jujutsu Kaisen">
-              </picture>
-              <div>
-                <h4>Jujutsu Kaisen</h4>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <picture>
-                <img
-                  src="/img/posters-animes/one-piece.jpg"
-                  alt="Poster de One Piece">
-              </picture>
-              <div>
-                <h4>One Piece</h4>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <picture>
-                <img
-                  src="/img/posters-animes/demon-slayer.jpg"
-                  alt="Poster de Kimetsu No Jaiba">
-              </picture>
-              <div>
-                <h4>Kimetsu No Yaiba</h4>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <!--seccion grilla de episodios-->
+    <section class="ep-list">
+        <select>
+         <option>Temporada 1 &mdash; 12 Episodios</option>
+         <option>Temporada 2 &mdash; 12 Episodios</option>
+         </select>
+      <ul>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep1.png" alt="caption espisodio 01">
+            <p>E01 - T01 | Ryomen Sukuna</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep2.png" alt="caption espisodio 02">
+            <p>E02 - T01 | Por mí</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep3.png" alt="caption espisodio 03">
+            <p>E03 - T01 | Chica de acero</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep4.png" alt="caption espisodio 04">
+            <p>E04 - T01 | El vientre maldito I</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep5.png" alt="caption espisodio 05">
+            <p>E05 - T01 | El vientre maldito II</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep6.png" alt="caption espisodio 06">
+            <p>E06 - T01 | Tras la lluvia</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep7.png" alt="caption espisodio 07">
+            <p>E07 - T01 | Asalto</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep8.jpg" alt="caption espisodio 08">
+            <p>E08 - T01 | Aburrimiento</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep9.png" alt="caption espisodio 09">
+            <p>E09 - T01 | Donnadies y castigo</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep10.png" alt="caption espisodio 10">
+            <p>E10 - T01 | Mutación pasiva</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep11.png" alt="caption espisodio 11">
+            <p>E11 - T01 | De mente cerrada</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/img/lista-episodios/ep12.png" alt="caption espisodio 12">
+            <p>E12 - T01 | Para ti, algún día</p>
+          </a>
+        </li>
+      </ul>
     </section>
   </body>
 </html>
