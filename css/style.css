@@ -37,10 +37,24 @@
     --font-medium: 1.8em;
     --font-small: 1.6em;
     --font-xsmal: 1.4em;
+
+    /*spacings*/
+    --spacing-header: 2rem;
+}
+
+ul,
+ol{
+    list-style: none;
+    padding-left: 0px;
+}
+
+a{
+    text-decoration: none;
 }
 
 *{
     box-sizing: border-box;
+    color: var(--white-solid);
 }
 
 html{
@@ -49,6 +63,15 @@ html{
 }
 
 /*estilos banner*/
+header{
+    background-color: var(--azul-solid);
+    padding: var(--spacing-header);
+}
+
+.logo-trackerkoi{
+    height: 5em;
+    width: 18.1em;
+}
 
 /*codigo css*/
 
