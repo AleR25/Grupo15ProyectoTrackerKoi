@@ -80,6 +80,11 @@ h1{
     font-weight: 500;
 }
 
+h3{
+    font-size: var(--font-large);
+    font-weight: 500;
+}
+
 /*propuesta de nav-bar (faltan los iconos)*/
 
 .nav-bar{
@@ -134,6 +139,49 @@ h1{
 /*codigo tarjeta del anime*/
 
 /*codigo carrusel*/
+
+/*css pagina catalogo*/
+
+.catalogo-container{
+    width: 100%;
+    max-width: 1400px;
+    height: 1364px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+}
+
+.catalogo-container .anime-card-small{
+    width: 210px;
+    height: 310px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(158, 123, 155, 0.3);
+    overflow: hidden;
+    margin:20px;
+    transition: all 0.20s;
+    text-align: center;
+    padding: 12px;
+    background-color: var(--white-solid);
+}
+
+.catalogo-container .anime-card-small:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 2px 2px rgba(158, 123, 155, 0.3);
+}
+
+.catalogo-container .anime-card-small img{
+width: 186px;
+height: 245px;
+border-radius: 5px;
+box-shadow: 0 2px 2px rgba(158, 123, 155, 0.1)
+}
+
+.catalogo-container .anime-card-small h3{
+    color: var(--black-solid);
+    margin: auto;
+}
+
+
 
 /*css de pagina individual*/
 
