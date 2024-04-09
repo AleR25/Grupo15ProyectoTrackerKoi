@@ -8,26 +8,24 @@
     <title>Tracker Koi</title>
 </head>
 <body> 
-       <article class="subtitulo-descrip"><!--Subtitulo catalogo-->
+    <article class="subtitulo-descrip"><!--Subtitulo catalogo-->
         <h3>Bienvenido a nuestro catalogo!</h3>
-        <p>Filtra los resultados para conseguir tu próximo anime favorito.</p>
+        <p>Filtra los resultados para encontrar tu próximo anime favorito.</p>
     </article>
-    <button>
-        <span>Filtrar</span><!--despues agregar solo en hover-->
-        <span></span><!--despues agregar solo en hover-->
+<section class="container-filtros">
+    <button class="boton-filtro">
+        <!--despues agregar solo en hover <span>Filtrar</span> -->
+        <span>:)</span><!--icono filtro-->
     </button>
-    <div><!--desplegable filtros-->
-        <form>
-            ORDENAR POR
-            <select>
-                <option>Alfabeticamente</option>
-                <option>Mas nuevo a mas viejo</option>
-                <option>Mas viejo a mas nuevo</option>
-            </select>
-        </form>
-        <form>
-            CATEGORIAS
-            <select>
+    <section class="barra-filtro"><!--desplegable filtros-->
+        <select class="caja-filtro">
+            <option value="" selected>ORDENAR POR</option>
+            <option>Alfabeticamente</option>
+            <option>Mas nuevo a mas viejo</option>
+            <option>Mas viejo a mas nuevo</option>
+        </select>
+            <select class="caja-filtro">
+                <option value="">CATEGORIAS</option>
                 <option>Accion</option>
                 <option>Aventura</option>
                 <option>Comedia</option>
@@ -36,29 +34,13 @@
                 <option>Romance</option>
                 <option>Terror</option>
             </select>
-        </form>
-        <form>
-            CATEGORIAS
-            <select>
-                <option>Accion</option>
-                <option>Aventura</option>
-                <option>Comedia</option>
-                <option>Ciencia Ficcion</option>
-                <option>Fantasia</option>
-                <option>Romance</option>
-                <option>Terror</option>
-            </select>
-        </form>
-        <form>
-            ESTADO
-            <select>
+            <select class="caja-filtro">
+                <option value="">ESTADO</option>
                 <option>En emision</option>
                 <option>Finalizado</option>
             </select>
-        </form>
-        <form>
-            AÑO
-            <select>
+            <select class="caja-filtro">
+                <option value="">AÑO</option>
                 <option>2013</option>
                 <option>2014</option>
                 <option>2015</option>
@@ -73,10 +55,11 @@
                 <option>2024</option>
             </select>
         </form>
-    </div>
+    </section>
+</section>
 
-    <section class="catalogo-container"> <!--container de catalos-->
-        <ul>
+<section> <!--container de catalos-->
+        <ul class="catalogo-container">
             <li class="anime-card-small">
                 <a href="">
                     <picture>
@@ -121,7 +104,138 @@
                     <h3>Full Metal Alchemist Brotherhood</h3>
                 </a>
             </li>
+        <li class="anime-card-small"> 
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/haikyu.jpg" alt="poster de Haikyu!">
+                </picture>
+                <h3>Haikyuu!</h3>
+            </a>
+        </li>
+        
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/jujutsu-kaisen.jpg" alt="Poster de Jujutsu kaisen">                                
+                </picture>
+                <h3>Jujutsu Kaisen</h3>
+            </a>
+        </li>
 
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/one-piece.jpg" alt="Poster de One Piece">
+                </picture>
+                <h3>One Piece</h3>
+            </a>
+        </li>
+
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/demon-slayer.jpg" alt="Poster demon-slayer">
+                </picture>
+                <h3>Kimetsu No Yaiba</h3>
+            </a>
+        </li>
+
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/full-metal-alchemist.jpg" alt="Poster full-metal-alchemist">
+                </picture>
+                <h3>Full Metal Alchemist Brotherhood</h3>
+            </a>
+        </li>
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/haikyu.jpg" alt="poster de Haikyu!">
+                </picture>
+                <h3>Haikyuu!</h3>
+            </a>
+        </li>
+        
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/jujutsu-kaisen.jpg" alt="Poster de Jujutsu kaisen">                                
+                </picture>
+                <h3>Jujutsu Kaisen</h3>
+            </a>
+        </li>
+
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/one-piece.jpg" alt="Poster de One Piece">
+                </picture>
+                <h3>One Piece</h3>
+            </a>
+        </li>
+
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/demon-slayer.jpg" alt="Poster demon-slayer">
+                </picture>
+                <h3>Kimetsu No Yaiba</h3>
+            </a>
+        </li>
+
+        <li class="anime-card-small">
+            <a href="">
+                <picture>
+                    <img src="/img/posters-animes/full-metal-alchemist.jpg" alt="Poster full-metal-alchemist">
+                </picture>
+                <h3>Full Metal Alchemist Brotherhood</h3>
+            </a>
+        </li>
+    <li class="anime-card-small"> 
+        <a href="">
+            <picture>
+                <img src="/img/posters-animes/haikyu.jpg" alt="poster de Haikyu!">
+            </picture>
+            <h3>Haikyuu!</h3>
+        </a>
+    </li>
+    
+    <li class="anime-card-small">
+        <a href="">
+            <picture>
+                <img src="/img/posters-animes/jujutsu-kaisen.jpg" alt="Poster de Jujutsu kaisen">                                
+            </picture>
+            <h3>Jujutsu Kaisen</h3>
+        </a>
+    </li>
+
+    <li class="anime-card-small">
+        <a href="">
+            <picture>
+                <img src="/img/posters-animes/one-piece.jpg" alt="Poster de One Piece">
+            </picture>
+            <h3>One Piece</h3>
+        </a>
+    </li>
+
+    <li class="anime-card-small">
+        <a href="">
+            <picture>
+                <img src="/img/posters-animes/demon-slayer.jpg" alt="Poster demon-slayer">
+            </picture>
+            <h3>Kimetsu No Yaiba</h3>
+        </a>
+    </li>
+
+    <li class="anime-card-small">
+        <a href="">
+            <picture>
+                <img src="/img/posters-animes/full-metal-alchemist.jpg" alt="Poster full-metal-alchemist">
+            </picture>
+            <h3>Full Metal Alchemist Brotherhood</h3>
+        </a>
+    </li>
         </ul>
 </section>
 </body>
