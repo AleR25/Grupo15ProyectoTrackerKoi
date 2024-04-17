@@ -39,7 +39,7 @@
     --font-xsmal: 1.4em;
 
     /*spacings*/
-    --spacing-header: 2rem;
+    --spacing-header: 1em;
 }
 
 ul,
@@ -53,6 +53,8 @@ a{
 }
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     color: var(--white-solid);
 }
@@ -65,8 +67,8 @@ html{
 
 /*estilos banner*/
 header{
-    background-color: var(--black-solid);
-    padding: var(--spacing-header);
+    background-color: var(--azul-solid);
+    margin: var(--spacing-header);
 }
 
 .logo{
