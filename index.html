@@ -12,44 +12,40 @@
     <!--el boton de inicio de sesión se podria ocultar una vez se inicie secion-->
     <!--falta agregar el desplegable-->
     <header>
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="/index.html">
-                    <img class="logo" src="/img/logo-trackerkoi/white-logo.png" alt="logo de Tracker Koi">
-                </a>
-            </picture>
-
-            <section>
-                <ul>
-                    <li class="navbar__item">
-                        <a class="navbar__link" href="/index.html"><i class="fa-solid fa-house" style="color: #cb9cf2;"></i></a>
-                    </li>
-
-                    <li class="navbar__item">
-                        <a class="navbar__link" href=""><i class="fa-solid fa-bars"></i></a><!--no se a q viste lleva este-->
-                    </li>
-
-                    <li class="navbar__item">
-                        <a class="navbar__link" href=""><i class="fa-solid fa-circle-user"></i></a>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <a class="navbar__link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-
-                <button>INICIO DE SESIÓN</button>
-            </section>
-        </nav>
+        <!--menu de navegación-->
+      <nav class="nav-bar">
+        <a href="/index.html">
+          <img class="logo"
+            src="/img/logo-trackerkoi/white-logo.png"
+            alt="logo de Tracker Koi">
+        </a>
+        <div class="icons-nav">
+          <ul>
+            <li>
+              <a href="/index.html"><i class="fa-solid fa-house" style="color: #cb9cf2;"></i></a>
+            </li>
+            <li>
+              <a href="/pages/views/catalogo.html"><i class="fa-solid fa-bars"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-circle-user"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="botones">
+          <a class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button class="login">INICIO DE SESIÓN</button>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section><!--Banner-->
-            <article>
-                <picture><!--agregar imagenes necesarias-->
-                    <img src="" alt="">
+        <section class="container-banner"><!--Banner-->
+            <article class="main-section">
+                <picture class="imagen-banner"><!--agregar imagenes necesarias-->
+                    <img src="/img/main-hero.png" alt="fondo anime">
                 </picture>
-                <div>
+                <div class="text-banner">
                     <h2>Marca lo que ya viste. Guarda lo que quieras ver después. ¡Empieza a seguir tus animes hoy mismo!</h2>
                     <ul>
                         <li>
@@ -71,9 +67,18 @@
                     </ul>
                 </div>
             </article>
-
-            <article>
+            
+            <article class="side-section">
+                <picture>
+                    <img src="" alt="">
+                </picture>
                 <div>
+                    <p>¡Descarga nuestra  app para tener siempre tu progreso a mano!</p>
+                </div>
+            </article>
+
+            <article class="secondary-sections">
+                <div class="secondary-section">
                     <picture>
                         <img src="" alt="">
                     </picture>
@@ -83,7 +88,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="secondary-section">
                     <picture>
                         <img src="" alt="">
                     </picture>
@@ -91,15 +96,6 @@
                         <p>El drama no es un genero, es un estilo de vida, prepara tus pañuelos.</p>
                         <button>AGREGAR FAVORITOS</button>
                     </div>
-                </div>
-            </article>
-            
-            <article>
-                <picture>
-                    <img src="" alt="">
-                </picture>
-                <div>
-                    <p>¡Descarga nuestra  app para tener siempre tu progreso a mano!</p>
                 </div>
             </article>
         </section>
