@@ -370,7 +370,7 @@ p{
 }
 
 /*tarjeta del anime small*/
-.catalogo-container .anime-card-small{ 
+.anime-card-small{ 
     width: 210px;
     height: 310px;
     border-radius: 8px;
@@ -383,19 +383,19 @@ p{
     background-color: var(--white-solid);
 }
 
-.catalogo-container .anime-card-small:hover{ 
+.anime-card-small:hover{ 
     transform: translateY(-10px);
     box-shadow: 0 2px 2px rgba(158, 123, 155, 0.3);
 }
 
-.catalogo-container .anime-card-small img{
+.anime-card-small img{
     width: 186px;
     height: 245px;
     border-radius: 5px;
     box-shadow: 0 2px 2px rgba(158, 123, 155, 0.3)
 }
 
-.catalogo-container .anime-card-small h3{
+.anime-card-small h3{
     color: var(--black-solid);
     margin: auto;
     text-shadow:0 2px 2px rgba(158, 123, 155, 0.3);
