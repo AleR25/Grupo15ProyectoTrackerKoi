@@ -325,10 +325,7 @@ p{
 }
 
 /*codigo carrusel*/
-
-
 /*CSS PAGINA CATALOGO*/
-
 /*Subtitulo con descripcion */
 .subtitulo-descrip{ 
     width: auto;
@@ -660,3 +657,32 @@ p{
     text-transform: capitalize;
     font-family: var(--font-poppins);
 }
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--lila-300);
+}
+
+.footer-content{
+    display: grid;
+    padding: 3em 4em 3em 4em;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    font-size: var(--font-small);
+    margin: 0.5em;
+}
+
+.copyrigth{
+    text-align: center;
+    background-color: var(--azul-solid);
+}
+
+.logos{
+    font-size: var(--font-large);
+}
+
