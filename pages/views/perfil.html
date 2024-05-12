@@ -9,31 +9,50 @@
     <title>Tracker Koi</title>
 </head>
 <body>
-    <header> <!--menu de navegación-->
-      <nav class="nav-bar">
-        <a href="/index.html">
-          <img class="logo"
-            src="/img/logo-trackerkoi/white-logo.png"
-            alt="logo de Tracker Koi">
-        </a>
-        <div class="menu-nav">
-          <ul>
-            <li><a class="navlink" href="/index.html">Home</a></li>
-            <li><a class="navlink"href="/pages/views/catalogo.html">Catalogo</a></li>
-            <li><a class="navlink"href="/pages/views/perfil.html">Mi Perfil</a></li>
-          </ul>
-        </div>
-        <div class="nav_close" id="nav-close">
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <div class="botones">
-          <a class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <button class="login">INICIO DE SESIÓN</button>
-        </div>
-        <div class="nav_toggle" id="nav-toggle">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-      </nav>
+    <!--NAV BAR-->
+    <header class="header"> 
+        <nav class="nav container">
+            <a href="/index.html">
+                <img class="logo"
+                  src="/img/logo-trackerkoi/white-logo.png"
+                  alt="logo de Tracker Koi">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <a href="/index.html">
+                    <img class="logo-menu-resp"
+                      src="/img/logo-trackerkoi/white-logo.png"
+                      alt="logo de Tracker Koi">
+                </a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/index.html" class="nav__link">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        <span>HOME</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/pages/views/catalogo.html" class="nav__link">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        <span>CATALOGO</span></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/pages/views/perfil.html" class="nav__link">
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        <span>MI PERFIL</span></a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="botones">
+                    <a class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <button class="login">
+                    <a href="/pages/admin/registro.html">INICIO DE SESIÓN</a></button>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </nav>
     </header>
     <section class="banner-perfil"> <!--HERO SECTION-->
         <div class="info-perfil">
@@ -43,8 +62,8 @@
             <h1>Juan Perez</h1>
         </div>
     </section>
-    <main>
-        <!-- <article class="subtitulo-descrip"> <!--Subtitulo catalogo
+    <!-- <main>
+        <article class="subtitulo-descrip"> <!--Subtitulo catalogo
             <h3>Episodios vistos recientemente</h3>
         </article>
         <ul>
@@ -168,5 +187,6 @@
             </article>
         </section>-->
     </main>
+    <script src="/js/main.js"></script>
 </body>
 </html>
