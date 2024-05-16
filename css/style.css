@@ -65,22 +65,10 @@ html{
     background-color: var(--black-solid);
 }
 
-/*estilos header
-header{
-    background-color: var(--azul-solid);
-    margin: var(--spacing-header);
-}
-
 main{
     margin-top: 6em;
 }
 
-.logo{
-    height: 2.6rem;
-    margin-top: 3px;
-}*/
-
-/*estilos textos*/
 h1{
     font-size: var(--font-display);
     font-weight: 500;
