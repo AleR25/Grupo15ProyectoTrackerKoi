@@ -562,6 +562,11 @@ article.main-section .text-banner{
     justify-content: space-around;
 }
 
+.texto-catalogo h4,
+.texto-catalogo p{
+    color: var(--black-solid);
+}
+
 /*tarjeta del anime small*/
 .anime-card-small{ 
     width: 210px;
