@@ -66,7 +66,7 @@ html{
 }
 
 main{
-    margin-top: 8em;
+    margin-top: 6em;
 }
 
 h1{
@@ -498,12 +498,11 @@ right: 14%;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    height: 100vh;
     padding: 20px;
 
     grid-auto-flow: dense;
 
-    height: 59em;
+    height: 90vh;
 }
 
 .main-section{
