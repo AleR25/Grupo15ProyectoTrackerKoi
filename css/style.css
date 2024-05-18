@@ -365,38 +365,46 @@ right: 14%;
     background-color:var(--lila-500);
 }
 
-.contenedor-modal{
+.contenedor__modal{
     position: fixed;
-    top: 0;
-    left: 0;
+    top: -20px;
+    left: -20px;
     right: 0;
     bottom: 0;
     z-index: -1;
     opacity: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mostrar{
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 1;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.contenedor-modal.mostrar{
-    background-color: var(--black-solid);
-    z-index: 1;
-    opacity: 0.8;
-}
-
-.contenedor-modal .modal{
+.mostrar .modal{
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: var(--azul-solid);
-    backdrop-filter: blur(20px);
     border-radius: 16px;
     border: #ffffff solid 3px;
     margin: 0 50em;
     padding: 5em;
-    opacity: 0;
+    opacity: 1;
 }
 
 .modal button{

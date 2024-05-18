@@ -11,63 +11,67 @@
 <body>
   <header class="header"> <!--MENU DE NAVEGACION-->
     <nav class="nav container">
+      <a href="/index.html">
+        <img class="logo"
+          src="/img/logo-trackerkoi/white-logo.png"
+          alt="logo de Tracker Koi">
+      </a>
+      <div class="nav__menu" id="nav-menu">
         <a href="/index.html">
-            <img class="logo"
+            <img class="logo-menu-resp"
               src="/img/logo-trackerkoi/white-logo.png"
               alt="logo de Tracker Koi">
         </a>
-        <div class="nav__menu" id="nav-menu">
-            <a href="/index.html">
-                <img class="logo-menu-resp"
-                  src="/img/logo-trackerkoi/white-logo.png"
-                  alt="logo de Tracker Koi">
-            </a>
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="/index.html" class="nav__link">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                    <span>HOME</span></a>
-                </li>
-                <li class="nav__item">
-                    <a href="/pages/views/catalogo.html" class="nav__link">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                    <span>CATALOGO</span></a>
-                </li>
-                <li class="nav__item">
-                    <a href="/pages/views/perfil.html" class="nav__link">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                    <span>MI PERFIL</span></a>
-                </li>
-            </ul>
-            <div class="nav__close" id="nav-close">
-                <i class="fa fa-times" aria-hidden="true"></i>
+        <ul class="nav__list">
+          <li class="nav__item">
+              <a href="/index.html" class="nav__link">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <span>HOME</span></a>
+          </li>
+          <li class="nav__item">
+              <a href="/pages/views/catalogo.html" class="nav__link">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <span>CATALOGO</span></a>
+          </li>
+          <li class="nav__item">
+              <a href="/pages/views/perfil.html" class="nav__link">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <span>MI PERFIL</span></a>
+          </li> 
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="botones">
+          <a class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <div class="login">
+            <div id="lanzar-modal">
+              <a href="#" onclick="aplicarCambios(); return false">INICIAR SESIÓN</a>
             </div>
-            <div class="botones">
-                <a class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <div class="login">
-                  <a href=# id="modal-act">INICIAR SESIÓN</a><p style="font-size: 12px; color: var(--black-solid); font-weight: 600;">|</p><a href="/pages/admin/registro.html">REGISTRARSE</a></div>
-            </div>
-            <div class="contenedor-modal">
-              <div class="modal">
-                <h3>Iniciar Sesion</h3>
-                <form action="">
-                  <div class="login-field">
-                    <label for="username">Nombre de Usuario:</label>
-                    <input type="text" name="username">
-                  </div>
-                  <div class="login-field">
-                      <label for="password">Contraseña:</label>
-                      <input type="password" name="password">
-                  </div>
-                  <button type="submit" class="boton-signup" id="abrir-perfil">Iniciar Sesión</button>
-                </form>
-              </div>
-            </div>
+            <p style="font-size: 12px; color: var(--black-solid); font-weight: 600;">|</p><a href="/pages/admin/registro.html">REGISTRARSE</a>
+          </div>
         </div>
         <div class="nav__toggle" id="nav-toggle">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
+      </div>
     </nav>
+    <div id="contenedor-modal" class="contenedor__modal">
+      <div class="modal">
+        <h3>Iniciar Sesion</h3>
+        <form action="">
+          <div class="login-field">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" name="username">
+          </div>
+          <div class="login-field">
+              <label for="password">Contraseña:</label>
+              <input type="password" name="password">
+          </div>
+          <button type="submit" class="boton-signup" id="abrir-perfil">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
   </header>
   <section class="banner-indv"> <!--HERO SECTION-->
     <div class="poster-div">
