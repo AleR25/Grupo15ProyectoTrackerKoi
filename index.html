@@ -184,13 +184,18 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-circle-chevron-left fa-2xl" style="color: #B197FC;"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-circle-chevron-right fa-2xl" style="color: #B197FC;"></i></button>
+                  </div>
             </article>
         </section>
 
         <!--PRUEBA-->
         <section class="cards-mobile">
             <article class="card">
-                <img src="img/branding/banner-anime.png" alt="" class="background" class="imagen-banner">
+                <img src="img/branding/banner-anime.png" alt="" class="background imagen-banner">
                 <div class="card-content">
                     <svg>...</svg>
                     <h3 class="tittle">Jujutsu Kaisen</h3>
@@ -199,7 +204,7 @@
             </article>
 
             <article class="card">
-                <img src="img/branding/banner-perfil.png" alt="" class="background">
+                <img src="img/branding/banner-perfil.png" alt="" class="background imagen-banner">
                 <div class="card-content">
                     <svg>...</svg>
                     <h3 class="tittle">Blue Lock</h3>
@@ -208,7 +213,7 @@
             </article>
 
             <article class="card">
-                <img src="img/branding/div-bento1.png" alt="" class="background" >
+                <img src="img/branding/div-bento1.png" alt="" class="background imagen-banner" >
                 <div class="card-content">
                     <svg>...</svg>
                     <h3 class="tittle">Solo Leveling</h3>
@@ -216,8 +221,8 @@
                 <div class="backdrop"></div>
             </article>
 
-            <article class="card">
-                <img src="img/branding/div-bento2.png" alt="" class="background">
+            <article class="card cuatro">
+                <img src="img/branding/div-bento2.png" alt="" class="background imagen-banner">
                 <div class="card-content">
                     <svg>...</svg>
                     <h3 class="tittle">Violette Evergarden</h3>
@@ -225,8 +230,8 @@
                 <div class="backdrop"></div>
             </article>
 
-            <article class="card">
-                <img src="img/branding/div-bento2.png" alt="" class="background">
+            <article class="card cinco">
+                <img src="img/branding/div-bento2.png" alt="" class="background imagen-banner">
                 <div class="card-content">
                     <svg>...</svg>
                     <h3 class="tittle">Violette Evergarden</h3>
@@ -235,7 +240,7 @@
             </article>
         </section>
 
-        <section><!--carrusel tendensia semanal-->
+        <section class="tendencia-container"><!--carrusel tendensia semanal-->
             <article class="subtitulo-catalogo">
                 <div class="subtitulo-descrip">
                     <h3>Tendencia Semanal</h3>
@@ -244,8 +249,8 @@
             </article>
 
             <article>
-                <ul class="catalogo-container">
-                    <li class="card-home best">
+                <ul class="catalogo-container tendencia">
+                    <li class="anime-card-small best one">
                         <a href="">
                             <picture>
                                 <img src="/img/posters-animes/haikyu.jpg" alt="poster de Haikyu!">
@@ -257,7 +262,7 @@
                         </a>
                     </li>
                     
-                    <li class="anime-card-small best">
+                    <li class="anime-card-small best two">
                         <a href="">
                             <picture>
                                 <img src="/img/posters-animes/jujutsu-kaisen.jpg" alt="Poster de Jujutsu kaisen">                                
@@ -269,7 +274,7 @@
                         </a>
                     </li>
 
-                    <li class="anime-card-small best">
+                    <li class="anime-card-small best three">
                         <a href="">
                             <picture>
                                 <img src="/img/posters-animes/one-piece.jpg" alt="Poster de One Piece">
@@ -281,19 +286,7 @@
                         </a>
                     </li>
 
-                    <li class="anime-card-small best">
-                        <a href="">
-                            <picture>
-                                <img src="/img/posters-animes/demon-slayer.jpg" alt="">
-                            </picture>
-                            <div class="texto-catalogo">
-                                <h4>Kimetsu No Yaiba</h4>
-                                <p>3 Temporadas - 26 Episodios</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="anime-card-small best">
+                    <li class="anime-card-small best four">
                         <a href="">
                             <picture>
                                 <img src="/img/posters-animes/demon-slayer.jpg" alt="">
@@ -342,27 +335,6 @@
     </footer>
     <script src="/js/main.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            startAt: 0,
-            perView: 5,
-            gap: 20,
-            breakpoints: {
-                1206: {
-                    perView: 4
-                },
-                1098: {
-                    perView: 3
-                },
-                991: {
-                    perView: 2
-                },
-                768: {
-                    perView: 2
-                }
-            }
-        }).mount()
-    </script>
+    <script src="/js/glide.js"></script>
 </body>
 </html>
