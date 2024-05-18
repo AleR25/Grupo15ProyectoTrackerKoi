@@ -142,6 +142,7 @@ p{
   .background{
     object-fit: cover;
     overflow: hidden;
+  }
   
   .card > .card-content {
     display: flex;
