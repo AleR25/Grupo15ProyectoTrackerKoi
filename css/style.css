@@ -731,6 +731,11 @@ gap: 1em;
     .barra-filtro .boton-filtro {
         max-width: 50%; 
     }
+
+    .catalogo{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(20, 1fr);
+    }
 } 
 
 
