@@ -578,7 +578,12 @@ gap: 1em;
 
 /*tarjeta del anime small*/
 .anime-card-small{ 
+<<<<<<< HEAD
+    width: 210px;
+    height: 310px;
+=======
     
+>>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 8px;
@@ -587,6 +592,8 @@ gap: 1em;
     text-overflow: ellipsis;
     transition: all 0.20s;
     text-align: center;
+<<<<<<< HEAD
+=======
     padding: 1em;
     background-color: var(--white-solid);
 }
@@ -631,12 +638,9 @@ gap: 1em;
 
 .anim{
     width: 210px;
+>>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
     padding: 12px;
-}
-
-.best{
-    width: 230px;
-    padding: 20px;
+    background-color: var(--white-solid);
 }
 
 .anime-card-small:hover{ 
