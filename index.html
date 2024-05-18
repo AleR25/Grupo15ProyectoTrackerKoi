@@ -120,68 +120,70 @@
                 </div>
             </article>
 
-            <article>
-                <ul class="catalogo-container">
-                    <li class="anime-card-small best">
-                        <a href="">
-                            <picture>
-                                <img src="/img/posters-animes/haikyu.jpg" alt="poster de Haikyu!">
-                            </picture>
-                            <div class="texto-catalogo">
-                                <h4>Haikyuu!</h4>
-                                <p>2 Temporadas - 22 Episodios</p>
-                            </div>
-                        </a>
-                    </li>
-                    
-                    <li class="anime-card-small best">
-                        <a href="">
-                            <picture>
-                                <img src="/img/posters-animes/jujutsu-kaisen.jpg" alt="Poster de Jujutsu kaisen">                                
-                            </picture>
-                            <div class="texto-catalogo">
-                                <h4>Jujutsu Kaisen</h4>
-                                <p>2 Temporadas - 24 Episodios</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="anime-card-small best">
-                        <a href="">
-                            <picture>
-                                <img src="/img/posters-animes/one-piece.jpg" alt="Poster de One Piece">
-                            </picture>
-                            <div class="texto-catalogo">
-                                <h4>One Piece</h4>
-                                <p>22 Temporadas - 1322 Episodios</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="anime-card-small best">
-                        <a href="">
-                            <picture>
-                                <img src="/img/posters-animes/demon-slayer.jpg" alt="">
-                            </picture>
-                            <div class="texto-catalogo">
-                                <h4>Kimetsu No Yaiba</h4>
-                                <p>3 Temporadas - 26 Episodios</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="anime-card-small best">
-                        <a href="">
-                            <picture>
-                                <img src="/img/posters-animes/demon-slayer.jpg" alt="">
-                            </picture>
-                            <div class="texto-catalogo">
-                                <h4>Kimetsu No Yaiba</h4>
-                                <p>3 Temporadas - 26 Episodios</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <article class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="anime-card-small best glide__slide">
+                            <a href="">
+                                <picture>
+                                    <img src="/img/posters-animes/haikyu.jpg" alt="poster de Haikyu!">
+                                </picture>
+                                <div class="texto-catalogo">
+                                    <h4>Haikyuu!</h4>
+                                    <p>2 Temporadas</p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="anime-card-small best glide__slide">
+                            <a href="">
+                                <picture>
+                                    <img src="/img/posters-animes/jujutsu-kaisen.jpg" alt="Poster de Jujutsu kaisen">                                
+                                </picture>
+                                <div class="texto-catalogo">
+                                    <h4>Jujutsu Kaisen</h4>
+                                    <p>2 Temporadas</p>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li class="anime-card-small best glide__slide">
+                            <a href="">
+                                <picture>
+                                    <img src="/img/posters-animes/one-piece.jpg" alt="Poster de One Piece">
+                                </picture>
+                                <div class="texto-catalogo">
+                                    <h4>One Piece</h4>
+                                    <p>22 Temporadas</p>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li class="anime-card-small best glide__slide">
+                            <a href="">
+                                <picture>
+                                    <img src="/img/posters-animes/demon-slayer.jpg" alt="">
+                                </picture>
+                                <div class="texto-catalogo">
+                                    <h4>Kimetsu No Yaiba</h4>
+                                    <p>3 Temporadas</p>
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li class="anime-card-small best glide__slide">
+                            <a href="">
+                                <picture>
+                                    <img src="/img/posters-animes/demon-slayer.jpg" alt="">
+                                </picture>
+                                <div class="texto-catalogo">
+                                    <h4>Kimetsu No Yaiba</h4>
+                                    <p>3 Temporadas</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </article>
         </section>
 
@@ -243,7 +245,7 @@
 
             <article>
                 <ul class="catalogo-container">
-                    <li class="anime-card-small best">
+                    <li class="card-home best">
                         <a href="">
                             <picture>
                                 <img src="/img/posters-animes/haikyu.jpg" alt="poster de Haikyu!">
@@ -340,5 +342,27 @@
     </footer>
     <script src="/js/main.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 5,
+            gap: 20,
+            breakpoints: {
+                1206: {
+                    perView: 4
+                },
+                1098: {
+                    perView: 3
+                },
+                991: {
+                    perView: 2
+                },
+                768: {
+                    perView: 2
+                }
+            }
+        }).mount()
+    </script>
 </body>
 </html>
