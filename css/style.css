@@ -720,7 +720,28 @@ gap: 1em;
     justify-content: right;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
+    .catalogo {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5, 1fr); /* 4 columnas */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .catalogo {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(7, 1fr); /* 3 columnas */
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .catalogo {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(10, 1fr); /* 2 columnas */
+    }
+}
+
+@media only screen and (max-width: 468px) {
     .barra-filtro {
         flex-direction: row; 
         flex-wrap: wrap; 
@@ -737,6 +758,8 @@ gap: 1em;
         grid-template-rows: repeat(20, 1fr);
     }
 } 
+
+
 
 
 /*CSS PAGINA INDIVIDUAL*/
