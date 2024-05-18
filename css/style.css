@@ -624,12 +624,8 @@ gap: 1em;
 
 /*tarjeta del anime small*/
 .anime-card-small{ 
-<<<<<<< HEAD
     width: 210px;
     height: 310px;
-=======
-    
->>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
     margin-top: 1em;
     margin-bottom: 1em;
     border-radius: 8px;
@@ -638,53 +634,6 @@ gap: 1em;
     text-overflow: ellipsis;
     transition: all 0.20s;
     text-align: center;
-<<<<<<< HEAD
-=======
-    padding: 1em;
-    background-color: var(--white-solid);
-}
-/* portatiles */
-@media only screen and (max-width: 1200px) {
-    .anime-card-small {
-        width: calc(50% - 1em);
-    }
-}
-
-/* tablet */
-@media only screen and (max-width: 1024px) {
-    .anime-card-small {
-        width: calc(50% - 1em);
-    }
-}
-
-/* tablet chica */
-@media only screen and (max-width: 992px) {
-    .anime-card-small {
-        width: calc(50% - 1em);
-    }
-}
-
-/* celulares apaisados*/
-@media only screen and (max-width: 776px) {
-    .anime-card-small {
-        width: calc(50% - 1em);
-    }
-}
-
-/* celulares*/
-@media only screen and (max-width: 490px) {
-    .anime-card-small {
-        width: calc(100% - 1em); 
-    }
-    .catalogo-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(20, 1fr); 
-    }
-}
-
-.anim{
-    width: 210px;
->>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
     padding: 12px;
     background-color: var(--white-solid);
 }
