@@ -498,7 +498,27 @@ article.main-section .text-banner{
     text-align: center;
 }
 
+@media screen and (max-width: 860px){
+    .container-banner{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        height: 100rem;
+    }
 
+    .main-section{
+        grid-column-end: span 1;
+        grid-row-end: span 3;
+    }
+
+    .secondary-section{
+        grid-column-end: span 1;
+        grid-row-end: span 1;
+    }
+
+    .side-section{
+        display: none;
+    }
+}
 
 /*CSS PAGINA CATALOGO*/
 /*Subtitulo con descripcion */
@@ -548,6 +568,7 @@ gap: 1em;
 
 .catalogo{
     grid-template-rows: repeat(4, 1fr);
+    padding: 12px;
 }
 
 .texto-catalogo h4,
