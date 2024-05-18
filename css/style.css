@@ -938,6 +938,18 @@ article.main-section .text-banner{
     margin-bottom: 10px;
 }
 
+.pass__align{
+    display: flex;
+    gap: 2%;
+}
+
+.contraseñas_div{
+    margin-bottom: 16px;
+    flex-direction: column;
+    display: flex;
+    width: 49%;
+}
+
 .signup-field{
     margin-bottom: 16px;
     flex-direction: column;
@@ -979,6 +991,7 @@ article.main-section .text-banner{
     text-align: center;
     margin: auto;
     padding-top: 20px;
+    font-size: var(--font-xsmal);
 }
 
 /*CSS FOOTER*/
