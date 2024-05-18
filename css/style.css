@@ -544,18 +544,18 @@ article.main-section .text-banner{
     text-align: center;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 860px){
     .container-banner{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
         height: 100rem;
     }
+=======
+>>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
 
-    .main-section{
-        grid-column-end: span 1;
-        grid-row-end: span 3;
-    }
 
+<<<<<<< HEAD
     .secondary-section{
         grid-column-end: span 1;
         grid-row-end: span 1;
@@ -566,9 +566,16 @@ article.main-section .text-banner{
     }
 }
 
-/*codigo carrusel*/
+=======
+>>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
 /*CSS PAGINA CATALOGO*/
 /*Subtitulo con descripcion */
+
+.body-catalogo-container{
+display: grid;
+gap: 1em;
+}
+
 .subtitulo-descrip{ 
     width: auto;
     height: auto;
@@ -577,7 +584,7 @@ article.main-section .text-banner{
     flex-direction: column;
     margin-top: 23px;
     margin-bottom: 23px;
-    margin-left: 12px;
+    margin-left: 2.2em;
     border-left: 10px solid var(--lila-solid);
     border-radius: 2px;
 }
@@ -595,20 +602,29 @@ article.main-section .text-banner{
 }
 
 /*container de animes*/
-.catalogo-container{
-    width: 100%;
+.catalogo-container {
+   box-sizing: border-box;
+    width: 100% - 2em;
     max-width: auto;
     height: auto;
     display: grid;
+<<<<<<< HEAD
     margin-top: 20px;
     margin-bottom: 20px;
     grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
     grid-gap: 30px;
     justify-content: space-around;
+=======
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin : 2em;
+    grid-auto-flow: dense;
+>>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
 }
 
 .catalogo{
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(4, 1fr);
 }
 
 .texto-catalogo h4,
@@ -618,24 +634,69 @@ article.main-section .text-banner{
 
 /*tarjeta del anime small*/
 .anime-card-small{ 
+<<<<<<< HEAD
+    width: 210px;
     height: 310px;
+=======
+    
+>>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
+    margin-top: 1em;
+    margin-bottom: 1em;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(158, 123, 155, 0.3);
     overflow:hidden;
     text-overflow: ellipsis;
     transition: all 0.20s;
     text-align: center;
+<<<<<<< HEAD
+=======
+    padding: 1em;
     background-color: var(--white-solid);
+}
+/* portatiles */
+@media only screen and (max-width: 1200px) {
+    .anime-card-small {
+        width: calc(50% - 1em);
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 1024px) {
+    .anime-card-small {
+        width: calc(50% - 1em);
+    }
+}
+
+/* tablet chica */
+@media only screen and (max-width: 992px) {
+    .anime-card-small {
+        width: calc(50% - 1em);
+    }
+}
+
+/* celulares apaisados*/
+@media only screen and (max-width: 776px) {
+    .anime-card-small {
+        width: calc(50% - 1em);
+    }
+}
+
+/* celulares*/
+@media only screen and (max-width: 490px) {
+    .anime-card-small {
+        width: calc(100% - 1em); 
+    }
+    .catalogo-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(20, 1fr); 
+    }
 }
 
 .anim{
     width: 210px;
+>>>>>>> e04896ec774fee0c9b808a1d8b8bb737cf491154
     padding: 12px;
-}
-
-.best{
-    width: 230px;
-    padding: 20px;
+    background-color: var(--white-solid);
 }
 
 .anime-card-small:hover{ 
@@ -660,41 +721,46 @@ article.main-section .text-banner{
 }
 
 
-/*Barra filtros*/
-.container-filtros{
-    display: inline-flex;
-    align-items: center;
-}
-/*boton filtro*/
-.boton-filtro {
-    background-color: var(--azul-solid);
-    width: 60px;
-    height: 60px;
-    padding: 15px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-style: none;
-    margin: 0;
-    cursor: pointer;
-}
-
-/*Barra filtros desplegada*/
+/*Barra filtros */
 .barra-filtro {
     display:flex;
-    justify-content: space-evenly;
-    background-color: var(--azul-500);
-    width: 680px;
-    height: 60px;
-    padding: 15px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
     border-style: none;
-    margin: -10px;
+    padding: 1em;
+    border-radius: 8px;
+    margin-left: 2em;
+    margin-right: 2em;
     cursor: pointer;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
 }
 
+/*boton filtro*/
+.barra-filtro .boton-filtro {
+    border-style: solid;
+    border-color: #cb9cf2;
+    border-radius: 20px;
+    background-color: var(--black-solid);
+    border-width: 2px;
+    margin:1em;
+    cursor: pointer;
+    justify-content:left; 
+    height: 2.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.barra-filtro .boton-filtro p {
+    font-size: 1.4em;
+    border-radius: 8px;
+    border-style: initial;
+    justify-content: center;
+}
+
+
 .barra-filtro .caja-filtro option{
-    font-size: 1.4;
+    font-size: 1em;
     color: var(--black-solid);
     border-radius: 8px;
     border-style: initial;
@@ -704,7 +770,30 @@ article.main-section .text-banner{
 .barra-filtro .caja-filtro {
     border-radius: 8px;
     border-style: initial;
+    color: var(--black-solid);
+    font-family: var(--font-poppins);
+    font-size: var(--font-xsmal);
+    font-weight: bold;
+    padding-left: 0.5em;
+    height: 2.5em;
+    margin: 0.5em;
+    display: flex;
+    justify-content: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .barra-filtro {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        align-items: flex-start;
     }
+
+    .barra-filtro .caja-filtro,
+    .barra-filtro .boton-filtro {
+        max-width: 50%; 
+    }
+} 
+
 
 /*CSS PAGINA INDIVIDUAL*/
 
