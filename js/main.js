@@ -65,10 +65,20 @@ form.addEventListener("submit", e=>{
         entrar = true
     }
 
-
     if(entrar){
         parrafo.innerHTML = warnings
     }else{
         parrafo.innerHTML = "Ya estas registrado! <3"
     }
+})
+
+// MODAL DE INICIO DE SESION //
+
+const mostrarModal = document.getElementById("modal-act")
+const ocultarModal = document.getElementById("abrir-perfil")
+const contModal = document.querySelector(".contenedor-modal")
+
+mostrarModal.addEventListener('click', () =>{
+    e.preventDefault()
+    contModal.classList.add('mostrar')
 })
